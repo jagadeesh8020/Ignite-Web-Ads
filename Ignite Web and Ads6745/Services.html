@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Section</title>
+    <link rel="stylesheet" href="stylea.css">
+    <script defer>
+        document.addEventListener("DOMContentLoaded", () => {
+            const serviceTitles = document.querySelectorAll('.service-box h2');
+            const serviceContents = document.querySelectorAll('.service-box p');
+            serviceContents.forEach(content => content.style.display = 'none');
+            serviceTitles.forEach((title, index) => {
+                title.addEventListener('click', () => {
+                    const content = serviceContents[index];
+                    serviceContents.forEach((c, i) => {
+                        if (i !== index) c.style.display = 'none';
+                    });
+                    content.style.display = content.style.display === 'none' ? 'block' : 'none';
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <section class="service-section">
+        <div class="container">
+            <h1 class="section-title">Services</h1>
+            <p class="section-subtitle">Transform your business with our custom web development, innovative app design, and strategic advertising.</p>
+            
+            <div class="service-grid">
+                <div class="service-box">
+                    <h2>Web Development</h2>
+                    <p>Our web development services specialize in building dynamic, responsive websites that enhance user engagement and drive conversions. By utilizing the latest technologies and best practices, we ensure your website is not only visually appealing but also optimized for performance across all devices. From corporate sites to e-commerce platforms, we craft tailored solutions that align with your business goals.</p>
+                </div>
+                <div class="service-box">
+                    <h2>App Development</h2>
+                    <p>Our app development services focus on creating innovative and user-friendly mobile applications tailored to your business needs. We combine cutting-edge technology with intuitive design to deliver seamless experiences on both iOS and Android platforms. Whether you need a simple utility app or a complex enterprise solution, we are committed to bringing your vision to life</p>
+                </div>
+                <div class="service-box">
+                    <h2>Advertisement</h2>
+                    <p>Our advertising services focus on creating targeted campaigns that maximize your reach and impact. By leveraging data-driven strategies and diverse platforms, we ensure your message resonates with the right audience at the right time. Whether through social media, search engines, or display advertising, we help you build brand awareness and drive measurable results</p>
+                </div>
+            
+                <video width="320" height="240" muted controls autoplay>
+                    <source src="./images/ADVERTISEMENT-T.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

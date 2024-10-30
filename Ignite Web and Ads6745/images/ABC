@@ -1,0 +1,39 @@
+    <div class="content">
+        <h1>Ignite Web & Ads</h1>
+        <br>
+        <br>
+        <p>Empowering startups with tailored web and ad solutions to build a strong online presence and reach their audience.</p>
+    <div>
+        <a href="#">
+            <button><span></span>Websites</button>
+          </a>
+          <a href="#">
+            <button><span></span>Advertisment</button>
+          </a>
+          
+    </div> 
+      </div>
+      -----------
+      <section class="footer" " style="background-color: lightblue">
+        <div class="box-container">
+        <div class="box">
+            <h3>Follow us</h3>
+            <a href="#">FACEBOOK</a>
+            <a href="#">INSTAGRAM</a>
+            <a href="#">TWITTER</a>
+        </div>
+        <div class="box">
+            <h3>Services</h3>
+            <a href="#">Web Development</a>
+            <a href="#">App Development</a>
+            <a href="#">Advertisement</a>
+        </div>
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#">ignitewebads@gmail.com</a>
+            <a href="#">+91 1234567892</a>
+            <a href="#">VignanUniversity-Guntur</a>
+        </div>
+        <div class="credit" style="color: #747474;"> Created by Ignite Web & Ads | all rights are reserved</div>
+    </div>
+       </section>
